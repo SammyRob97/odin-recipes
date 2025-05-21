@@ -1,0 +1,215 @@
+/* This is the general light and dark colour palette*/
+:root {
+  /* Light Mode */
+  --bg: #FFF3E0;
+  --primary: #4CAF50;
+  --accent: #E53935;
+  --text: #333333;
+  --box: #D3D3D3;
+  --page: white;
+}
+
+.darkmode{
+  --bg: #121212;
+  --primary: #81C784;
+  --accent: #FFB74D;
+  --text: #E0E0E0;
+  --box: #FFF3E0;
+  --page: #333333;
+}
+
+/*The code below is for the index.hmtl page*/
+/*Formatting the size for the title and sub-title*/
+.index-title,.index-sub-title{
+    font-family: 'Montserrat';
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text);
+    background-color: var(--primary);
+    padding: 10px;
+    margin: 10px;
+}
+
+.index-sub-title{
+   font-size: 20px;
+   color: var(--bg);
+}
+
+.link-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 4em;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 200;
+   width: 100%;
+   text-align: center;
+   padding: 20px;
+}
+
+.tofu-link{
+    color: var(--text);
+    background-color: var(--bg);
+    word-wrap: break-word;
+    width: 100px;
+    margin-right: auto;
+    padding: 20px;
+} 
+
+.bchicken-link{
+    color: var(--text);
+    background-color: var(--bg);
+    word-wrap: break-word;
+    width: 100px;
+    margin: auto;
+    padding: 20px;
+}
+  
+
+.brownie-link{
+    color: var(--text);
+    background-color: var(--bg);
+    word-wrap: break-word;
+    width: 100px;
+    margin-left: auto;
+    margin-right: 50px;
+    padding: 20px;
+} 
+
+.miso-link{
+    color: var(--text);
+    background-color: var(--bg);
+    word-wrap: break-word;
+    width: 100px;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.salmon-link{
+    color: var(--text);
+    background-color: var(--bg);
+    word-wrap: break-word;
+    width: 100px;
+    margin-left: auto;
+    margin-right: 50px;
+    grid-column: 3;
+    padding: 20px;
+}
+
+body{
+    padding: 25px;
+    background-color: var(--page);
+    font-size: 25px;
+}
+
+/*The code below is for the darkmode button*/
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--box);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg{
+    fill: var(--text)
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+/* ---------------------------------------- */
+
+/*The code below is for the recipe pages*/
+
+.rec-home{
+    font-family: 'Montserrat';
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text);
+    background: var(--primary); width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.rec-title,.rec-des{
+    font-family: 'Montserrat';
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text);
+    background-color: var(--primary);
+    padding: 10px;
+    margin: 10px;
+}
+
+.rec-pic{
+    display: flex;
+    justify-content: center;
+}
+
+.rec-des{
+    font-size: 20px;
+    color: var(--bg);
+    margin: auto;
+}
+
+.rec-des-text{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: var(--text);
+}
+
+.rec-ing{
+    font-family: 'Montserrat';
+    text-shadow: 1px 1px 2px black;
+    font-size: 25px;
+    color: var(--bg);
+    background-color: var(--primary); width: 150px;
+    justify-content: center;
+}
+
+.rec-ing-list{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: var(--text);
+    border-style:solid;
+    border-color: var(--primary);
+}
+
+.rec-steps{
+    font-family: 'Montserrat';
+    text-shadow: 1px 1px 2px black;
+    font-size: 25px;
+    color: var(--bg);
+    background-color: var(--primary); width: 75px;
+    justify-content: center;
+}
+
+.recSteps-text{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: var(--text);
+    border-style:solid;
+    border-color: var(--primary);
+}
